@@ -7,15 +7,24 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
-<body>
-    @yield('content')
-    <header>
-        <nav class="nav-page">
-            <ul>
-            <li><a href=" {{ route('home')}} ">Inicio</a></li>
-            <li><a href=" {{ route('contact')}} ">Quienes somos</a></li>
+<body class="b-page">
+    {{-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href=" {{ route('home')}} ">
+            <img src="{{asset('/images/descarga.png')}}" width="100px" height="100px" >
+        </a>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href=" {{ route('home')}} " tabindex="-1" aria-disabled="true">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href=" {{ route('contact')}} " tabindex="-1" aria-disabled="true">Quienes somos</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    <div>
+            @yield('content')
+    </div> --}}
 </body>
 </html>
