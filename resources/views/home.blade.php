@@ -1,3 +1,7 @@
-@yield('Pagina Principal')
+@extends('layout')
 
-@include('partials.nav')
+@section('title','Pagina Principal')
+
+@section('content')
+
+@endsection

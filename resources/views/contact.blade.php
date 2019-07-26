@@ -1,3 +1,7 @@
-@yield('Contacto')
+@extends('layout')
 
-@include('partials.nav')
+@section('title','Quienes somos')
+
+@section('content')
+
+@endsection
